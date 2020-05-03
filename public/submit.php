@@ -16,8 +16,8 @@ foreach ($wing_arr as $wings) {
 	$wing .= ++$count . "." . $wings . "&nbsp;&nbsp;";
 }
 
-$full_name = $_POST['full_name'];
-$program = $_POST['program'];
+$full_name = ucwords($_POST['full_name']);
+$program = ucwords($_POST['program']);
 $level = $_POST['level'];
 $hall = $_POST['hall'];
 if ($hall == "Choose a hall") {
@@ -52,7 +52,7 @@ if ($result) {
 }else{
 	echo mysqli_error($connection);
 }
-	
+
 }
 
 
