@@ -15,7 +15,7 @@
 		    -ms-transform: scale(3); /* IE 9 */
     		-webkit-transform: scale(3); /* Chrome, Safari, Opera */
     		transform: scale(3);
-    		margin: 0 35px 25px 35px;
+    		margin: 0 20px 25px 20px;
 		}
 
 		input[type=checkbox] {
@@ -101,6 +101,10 @@
 	      <input type="radio" value="500" name="level">500
 	    </label>
 
+	    <label class="radio-inline">
+	      <input type="radio" value="600" name="level">600
+	    </label>
+
       </div>
 		<!-- End Level -->
 
@@ -118,6 +122,8 @@
 		  <option value="Casford Hall">Casford Hall</option>
 		  <option value="Valco Hall">Valco Hall</option>
 		  <option value="Kwame Nkrumah Hall (KNH)">Kwame Nkrumah Hall (KNH)</option>
+		  <option value="Supernuation Hall">Supernuation Hall</option>
+		  <option value="SRC Hall">SRC Hall</option>
 		</select>
       </div>
 		<!-- End Hall of Affiliation -->
@@ -192,8 +198,9 @@
     </form>
     <!-- Form -->
 
+    <br />
 
-	<a href="download.php" class="btn btn-primary" style="font-size: 50px; margin: 60px auto;">Generate excel</a>
+	<a href="admin.php" style="font-size: 40px; text-decoration: underline; margin: 60px auto;">Generate CSV file</a>
 
   </div>
 
