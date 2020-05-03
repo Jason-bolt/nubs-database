@@ -26,7 +26,7 @@
 ];
 
 	foreach ($columns as $column) {
-		$column_header[] = $column;
+		$column_header[] = strtoupper($column);
 	}
 	// while ($column = mysqli_fetch_row($columns)) {
 	// 	$column_header[] = strtoupper($column[0]);
