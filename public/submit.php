@@ -23,7 +23,7 @@ $hall = $_POST['hall'];
 if ($hall == "Choose a hall") {
 	$hall = null;
 }
-$mother_church = $_POST['mother_church'];
+$mother_church = ucwords($_POST['mother_church']);
 $birth_date = $_POST['birth_date'];
 $phone_number = $_POST['phone_number'];
 
