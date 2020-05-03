@@ -177,7 +177,7 @@
       <div class="md-form" style="margin: 20px auto;">
       	<label style="color: #000;">Phone number</label>
 
-        <input style="font-size: 50px;" type="tel" name="phone_number" class="form-control" size="500" required>
+        <input style="font-size: 50px;" type="tel" name="phone_number" class="form-control" size="500" placeholder="number1 - number2..." required>
       </div>
      <!-- End Phone Number -->
 
