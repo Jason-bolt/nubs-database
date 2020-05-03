@@ -10,7 +10,7 @@
 	header('Content-Disposition: attachment; filename=' . $filename);
 
 	// fetching the database columns from the database
-	$query = "select column_name from information_schema.columns where table_schema='nubs_ucc' and table_name='nubs'";
+	$query = "select column_name from information_schema.columns where table_schema='XLL3UiaxH9' and table_name='nubs'";
 	$columns = mysqli_query($connection, $query);
 
 	while ($column = mysqli_fetch_row($columns)) {
