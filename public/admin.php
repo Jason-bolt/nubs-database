@@ -50,7 +50,7 @@
       <div class="md-form" style="margin: 20px auto;">
       	<label style="color: #000;">Password</label>
 
-        <input style="font-size: 50px;" type="text" name="password" class="form-control" placeholder="Password..." size="500" required>
+        <input style="font-size: 50px;" type="password" name="password" class="form-control" placeholder="Password..." size="500" required>
       </div>
 		<!-- End Password -->
 
