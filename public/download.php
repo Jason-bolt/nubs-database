@@ -14,7 +14,7 @@
 	$columns = mysqli_query($connection, $query);
 
 	while ($column = mysqli_fetch_row($columns)) {
-		$column_header[] = strtoupper($column[0]), 50;
+		$column_header[] = strtoupper($column[0]);
 	}
 	fputcsv($file, $column_header);	
 
