@@ -10,12 +10,27 @@
 	header('Content-Disposition: attachment; filename=' . $filename);
 
 	// fetching the database columns from the database
-	$query = "select column_name from information_schema.columns where table_schema='XLL3UiaxH9' and table_name='nubs'";
-	$columns = mysqli_query($connection, $query);
+	// $query = "select column_name from information_schema.columns where table_schema='XLL3UiaxH9' and table_name='nubs'";
+	// $columns = mysqli_query($connection, $query);
 
-	while ($column = mysqli_fetch_row($columns)) {
-		$column_header[] = strtoupper($column[0]);
+	$columns = [
+		'id', 
+		'full_name',
+		'program',
+		'level',
+		'hall',
+		'wing(s)',
+		'mother church',
+		'date of birth',
+		'phone number(s)'
+];
+
+	foreach ($columns as $column) {
+		$column_header[] = $column;
 	}
+	// while ($column = mysqli_fetch_row($columns)) {
+	// 	$column_header[] = strtoupper($column[0]);
+	// }
 	fputcsv($file, $column_header);	
 
 
