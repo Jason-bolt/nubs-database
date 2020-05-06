@@ -26,6 +26,7 @@ if ($hall == "Choose a hall") {
 $mother_church = ucwords($_POST['mother_church']);
 $birth_date = $_POST['birth_date'];
 $phone_number = $_POST['phone_number'];
+$email = $_POST['email'];
 
 // query to check if user exists
 $check_query = "SELECT * FROM nubs";
@@ -40,10 +41,10 @@ if (mysqli_num_rows($already_in) > 0) {
 // query to store data from member
 $query = "INSERT into nubs(";
 $query .= "full_name, program, level, hall_of_affiliation, wing,";
-$query .= " mother_church, date_of_birth, phone_number";
+$query .= " mother_church, date_of_birth, phone_number, email";
 $query .= ") VALUES (";
 $query .= "'{$full_name}', '{$program}', '{$level}', '{$hall}',";
-$query .= " '{$wing}', '{$mother_church}', '{$birth_date}', '{$phone_number}'";
+$query .= " '{$wing}', '{$mother_church}', '{$birth_date}', '{$phone_number}', '{$email}'";
 $query .= ")";
 $result = mysqli_query($connection, $query);
 

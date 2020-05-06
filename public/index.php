@@ -187,6 +187,14 @@
       </div>
      <!-- End Phone Number -->
 
+     <!-- Email Address -->
+      <div class="md-form" style="margin: 20px auto;">
+      	<label style="color: #000;">Email Address</label>
+
+        <input style="font-size: 50px;" type="email" name="email" class="form-control" size="500" placeholder="example@email.com" required>
+      </div>
+     <!-- End Email Address -->
+
      <hr />
      <br />
 
