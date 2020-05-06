@@ -13,7 +13,7 @@ $wing_arr = $_POST['wing'];
 $wing = '';
 $count = 0;
 foreach ($wing_arr as $wings) {
-	$wing .= ++$count . "." . $wings . "&nbsp;&nbsp;";
+	$wing .= ++$count . "." . $wings . "  ";
 }
 
 $full_name = ucwords($_POST['full_name']);
