@@ -114,7 +114,7 @@
       <div class="md-form" style="margin: 20px auto; ">
       	<label style="color: #000;">Hall of Affiliation</label>
 
-        <select name="hall" class="browser-default custom-select" style="height: 60px; font-size: 40px;">
+        <select name="hall" class="browser-default custom-select" style="height: 60px; font-size: 40px;" required>
 		  <option selected>Choose a hall</option>
 		  <option value="Atlantic Hall (ATL)">Atlantic Hall (ATL)</option>
 		  <option value="Adehye Hall">Adehye Hall</option>
