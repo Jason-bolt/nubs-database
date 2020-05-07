@@ -95,6 +95,7 @@
 	      <th style="font-size: 38px; padding: 0 100px;" class="text-center">Mother Church</th>        
 	      <th style="font-size: 38px; padding: 0 100px;" class="text-center">Date of Birth</th>
 	      <th style="font-size: 38px; padding: 0 100px;" class="text-center">Phone Number</th>
+	      <th style="font-size: 38px; padding: 0 100px;" class="text-center">Email</th>
 	      </tr>
 	    </thead>
 	  <tbody>
@@ -112,6 +113,7 @@
 	    <td style="font-size: 35px;"><?php echo $result['mother_church']; ?></td>
 	    <td style="font-size: 35px;"><?php echo $result['date_of_birth']; ?></td>
 	    <td style="font-size: 35px;"><?php echo $result['phone_number']; ?></td>
+	    <td style="font-size: 35px;"><?php echo $result['email']; ?></td>
 	    </tr>
 	    <?php
 	  }
