@@ -22,7 +22,11 @@
 		'wing(s)',
 		'mother church',
 		'date of birth',
-		'phone number(s)'
+		'phone number(s)',
+		'email',
+		'guardian',
+		'guardian number 1',
+		'guardian number 2'
 ];
 
 	foreach ($columns as $column) {

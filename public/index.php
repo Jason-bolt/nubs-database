@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NUBS-UCC Database</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	<style type="text/css">
 
-		body{
+		/*body{
 			font-size: 60px;
 			line-height: 1.3em;
-		}
+		}*/
 
-		input[type=radio] {
-		    -ms-transform: scale(3); /* IE 9 */
-    		-webkit-transform: scale(3); /* Chrome, Safari, Opera */
-    		transform: scale(3);
-    		margin: 0 20px 25px 20px;
-		}
-
-		input[type=checkbox] {
-		    -ms-transform: scale(3); /* IE 9 */
-    		-webkit-transform: scale(3); /* Chrome, Safari, Opera */
-    		transform: scale(3);
-    		margin: 0 35px 25px 35px;
+		label{
+			margin-left: 5px;
 		}
 
 	</style>
@@ -42,11 +40,11 @@
  -->
 
 
-
-<!-- Material form login -->
+<section class="container py-1 text-center">
+	<!-- Material form login -->
 <div class="card">
 
-  <h5 class="card-header info-color white-text text-center py-4" style="font-size: 60px;">
+  <h5 class="card-header info-color white-text text-center py-4">
     <strong>NUBS-UCC Database</strong>
   </h5>
 
@@ -58,9 +56,9 @@
 
       <!-- Full name -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Full Name</label>
+      	<h5 style="color: #000;">Full Name</h5>
 
-        <input style="font-size: 50px;" type="text" name="full_name" class="form-control" placeholder="Fullname..." size="500" required>
+        <input type="text" name="full_name" class="form-control" placeholder="Fullname..." required>
       </div>
       	<!-- End Full name -->
 
@@ -68,17 +66,17 @@
 
       <!-- Program -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Program</label>
+      	<h5 style="color: #000;">Program</h5>
 
-        <input style="font-size: 50px;" type="text" name="program" class="form-control" placeholder="Program..." size="500" required>
+        <input type="text" name="program" class="form-control" placeholder="Program..." required>
       </div>
 		<!-- End Program -->
 
 		<hr />
 
 		<!-- Level -->
-      <div class="md-form" style="margin: 20px auto; font-size: 50px;">
-      	<label style="color: #000;">Level</label>
+      <div class="md-form" style="margin: 20px auto;	">
+      	<h5 style="color: #000;">Level</h5>
       	<br />
 
         <label class="radio-inline">
@@ -112,9 +110,9 @@
 
 		<!-- Hall of Affiliation -->
       <div class="md-form" style="margin: 20px auto; ">
-      	<label style="color: #000;">Hall of Affiliation</label>
+      	<h5 style="color: #000;">Hall of Affiliation</h5>
 
-        <select name="hall" class="browser-default custom-select" style="height: 60px; font-size: 40px;" required>
+        <select name="hall" class="browser-default custom-select" required>
 		  <option selected>Choose a hall</option>
 		  <option value="Atlantic Hall (ATL)">Atlantic Hall (ATL)</option>
 		  <option value="Adehye Hall">Adehye Hall</option>
@@ -132,7 +130,7 @@
 
 		<!-- Wings -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Wings</label>
+      	<h5 style="color: #000;">Wings</h5>
 
 		<div class="checkbox">
 			<label><input type="checkbox" name="wing[]" value="Bible Studies Wing">Bible Studies Wing</label>
@@ -161,9 +159,9 @@
 
  	<!-- Mother Church -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Mother Church</label>
+      	<h5 style="color: #000;">Mother Church</h5>
 
-        <input style="font-size: 50px;" type="text" name="mother_church" class="form-control" placeholder="Church name, Location..." size="500" required>
+        <input type="text" name="mother_church" class="form-control" placeholder="Church name, Location..." required>
       </div>
      <!-- End Mother church -->
 
@@ -171,9 +169,9 @@
 
      <!-- Birth date -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Date of birth</label>
+      	<h5 style="color: #000;">Date of birth</h5>
 
-        <input style="font-size: 50px;" type="date" name="birth_date" class="form-control" size="500" required>
+        <input type="date" name="birth_date" class="form-control" required>
       </div>
      <!-- End Birth date -->
 
@@ -181,26 +179,46 @@
 
      <!-- Phone Number -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Phone number</label>
+      	<h5 style="color: #000;">Phone number</h5>
 
-        <input style="font-size: 50px;" type="tel" name="phone_number" class="form-control" size="500" placeholder="number1 - number2..." required>
+        <input type="tel" name="phone_number" class="form-control" placeholder="number1 - number2..." required>
       </div>
      <!-- End Phone Number -->
 
+     <hr />
+
      <!-- Email Address -->
       <div class="md-form" style="margin: 20px auto;">
-      	<label style="color: #000;">Email Address</label>
+      	<h5 style="color: #000;">Email Address</h5>
 
-        <input style="font-size: 50px;" type="email" name="email" class="form-control" size="500" placeholder="example@email.com" required>
+        <input type="email" name="email" class="form-control" placeholder="example@email.com" required>
       </div>
      <!-- End Email Address -->
+
+     <hr />
+
+     <!-- Guardian -->
+      <div class="md-form" style="margin: 20px auto;">
+      	<h5 style="color: #000;">Guardian details</h5>
+
+        <input type="text" name="guardian" class="form-control" placeholder="Relationship with guardian" required>
+
+        <br />
+
+        <input type="tel" name="guardian_number1" class="form-control" placeholder="Phone number 1" required>
+
+        <br />
+
+        <input type="tel" name="guardian_number2" class="form-control" placeholder="Phone number 2 (Optional)">
+      </div>
+     <!-- End Guardian -->
 
      <hr />
      <br />
 
 
       <!-- Sign in button -->
-      <button style="font-size: 50px; margin: 20px auto;" class="btn btn-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" name="submit">Submit</button>
+      <button style="margin: 20px auto;" class="btn btn-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" name="submit">Submit</button>
 
 
     </form>
@@ -208,12 +226,16 @@
 
     <br />
 
-	<a href="admin.php" style="font-size: 40px; text-decoration: underline; margin: 60px auto;">Generate CSV file</a>
+	<a href="admin.php" style="text-decoration: underline; margin: 60px auto;">Generate CSV file</a>
 
   </div>
 
 </div>
 <!-- Material form login -->
+</section>
+
+
+
 
 
 </body>

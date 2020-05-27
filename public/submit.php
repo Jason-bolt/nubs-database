@@ -27,6 +27,9 @@ $mother_church = ucwords($_POST['mother_church']);
 $birth_date = $_POST['birth_date'];
 $phone_number = $_POST['phone_number'];
 $email = $_POST['email'];
+$guardian = ucwords($_POST['guardian']);
+$guardian_number1 = ucwords($_POST['guardian_number1']);
+$guardian_number2 = ucwords($_POST['guardian_number2']);
 
 // query to check if user exists
 $check_query = "SELECT * FROM nubs";
@@ -41,10 +44,12 @@ if (mysqli_num_rows($already_in) > 0) {
 // query to store data from member
 $query = "INSERT into nubs(";
 $query .= "full_name, program, level, hall_of_affiliation, wing,";
-$query .= " mother_church, date_of_birth, phone_number, email";
+$query .= " mother_church, date_of_birth, phone_number, email,";
+$query .= " guardian, guardian_number1, guardian_number2 ";
 $query .= ") VALUES (";
 $query .= "'{$full_name}', '{$program}', '{$level}', '{$hall}',";
-$query .= " '{$wing}', '{$mother_church}', '{$birth_date}', '{$phone_number}', '{$email}'";
+$query .= " '{$wing}', '{$mother_church}', '{$birth_date}', '{$phone_number}', '{$email}',";
+$query .= " '{$guardian}', '{$guardian_number1}', '{$guardian_number2}' ";
 $query .= ")";
 $result = mysqli_query($connection, $query);
 
