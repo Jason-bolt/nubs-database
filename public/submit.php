@@ -16,20 +16,20 @@ foreach ($wing_arr as $wings) {
 	$wing .= ++$count . "." . $wings . "  ";
 }
 
-$full_name = ucwords($_POST['full_name']);
-$program = ucwords($_POST['program']);
+$full_name = ucwords(mysqli_real_escape_string($connection, $_POST['full_name']));
+$program = ucwords(mysqli_real_escape_string($connection, $_POST['program']));
 $level = $_POST['level'];
 $hall = $_POST['hall'];
 if ($hall == "Choose a hall") {
 	$hall = null;
 }
-$mother_church = ucwords($_POST['mother_church']);
+$mother_church = ucwords(mysqli_real_escape_string($connection, $_POST['mother_church']));
 $birth_date = $_POST['birth_date'];
-$phone_number = $_POST['phone_number'];
-$email = $_POST['email'];
-$guardian = ucwords($_POST['guardian']);
-$guardian_number1 = ucwords($_POST['guardian_number1']);
-$guardian_number2 = ucwords($_POST['guardian_number2']);
+$phone_number = mysqli_real_escape_string($connection, $_POST['phone_number']);
+$email = mysqli_real_escape_string($connection, $_POST['email']);
+$guardian = ucwords(mysqli_real_escape_string($connection, $_POST['guardian']));
+$guardian_number1 = ucwords(mysqli_real_escape_string($connection, $_POST['guardian_number1']));
+$guardian_number2 = ucwords(mysqli_real_escape_string($connection, $_POST['guardian_number2']));
 
 // query to check if user exists
 $check_query = "SELECT * FROM nubs";

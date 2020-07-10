@@ -201,7 +201,8 @@
       <div class="md-form" style="margin: 20px auto;">
       	<h5 style="color: #000;">Guardian details</h5>
 
-        <input type="text" name="guardian" class="form-control" placeholder="Relationship with guardian" required>
+        <input type="text" name="guardian" class="form-control" placeholder="Name and relationship with guardian" required>
+        <p>e.g: Mr. Jane Doe (Father)</p>
 
         <br />
 
